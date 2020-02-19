@@ -1,0 +1,11 @@
+framework module PartnersSDK {
+  umbrella header "PartnersSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module PartnersSDK.Swift {
+    header "PartnersSDK-Swift.h"
+    requires objc
+}
