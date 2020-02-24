@@ -13,17 +13,17 @@ spec.static_framework = true
 spec.author             = { 'Gabi G' => 'gabi@testm.com' }
 spec.ios.deployment_target = '11.0'
 
-spec.source         = { :git => 'https://github.com/veesto/PartnersSDK.git', :tag => spec.version.to_s }
-spec.source_files   = "PartnersSDK.framework/Headers/*.h"
-spec.public_header_files = "PartnersSDK.framework/Headers/*.h"
-spec.vendored_frameworks = 'PartnersSDK.framework'
+spec.source         = { :git => 'https://github.com/veesto/iOSSDKPod.git', :tag => spec.version.to_s }
+#spec.source_files   = "PartnersSDK.framework/Headers/*.h"
+#spec.public_header_files = "PartnersSDK.framework/Headers/*.h"
+#spec.vendored_frameworks = 'PartnersSDK.framework'
 
- #spec.source_files  = "PartnersSDK/**/*","PartnersCodeBase/**/*.{h,m,swift}"
- #spec.public_header_files = "PartnersSDK/**/*.h"
- #spec.resource_bundles = {
-  #  'PartnersPod' => ['PartnersCodeBase/**/*.{xib,storyboard,mp3,gif,json,png,jpg,jpeg}']
- # }
- #spec.resources = 'PartnersCodeBase/**/*.{xib,storyboard,mp3,gif,json,png,jpg,jpeg}'
+ spec.source_files  = "PartnersSDK/**/*","PartnersCodeBase/**/*.{h,m,swift}"
+ spec.public_header_files = "PartnersSDK/**/*.h"
+ spec.resource_bundles = {
+    'PartnersPod' => ['PartnersCodeBase/**/*.{xib,storyboard,mp3,gif,json,png,jpg,jpeg}']
+  }
+ spec.resources = 'PartnersCodeBase/**/*.{xib,storyboard,mp3,gif,json,png,jpg,jpeg}'
 
 spec.dependency 'ReachabilitySwift'
 spec.dependency 'lottie-ios'
